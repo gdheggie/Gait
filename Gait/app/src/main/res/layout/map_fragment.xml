@@ -1,0 +1,122 @@
+<FrameLayout
+    android:id="@+id/main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_frame"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|end"
+        fab:menu_backgroundColor="#bb1b212E"
+        fab:fab_colorNormal="#FCB97D"
+        fab:fab_colorPressed="#ccFCB97D"
+        app:layout_anchorGravity="bottom|right|end"
+        fab:fab_showShadow="true"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_cornerRadius="8dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:fab_shadowColor="#66000000"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@android:drawable/ic_delete"
+            fab:fab_label="@string/sign_out"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#FCB97D"
+            fab:fab_colorPressed="#FCB97D"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@android:drawable/ic_menu_edit"
+            fab:fab_label="Schedule Gait"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#FCB97D"
+            fab:fab_colorPressed="#FCB97D"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@android:drawable/ic_menu_compass"
+            fab:fab_label="Request Gait"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#FCB97D"
+            fab:fab_colorPressed="#FCB97D"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/gait_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|end"
+        fab:menu_backgroundColor="#bb1b212E"
+        fab:fab_colorNormal="#FCB97D"
+        fab:fab_colorPressed="#FCB97D"
+        app:layout_anchorGravity="bottom|right|end"
+        fab:fab_showShadow="true"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_cornerRadius="8dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:fab_shadowColor="#66000000"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        android:visibility="gone">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/gait3"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@android:drawable/ic_delete"
+            fab:fab_label="@string/sign_out"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#4D7EA8"
+            fab:fab_colorPressed="#4D7EA8"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/gait1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@android:drawable/ic_menu_info_details"
+            fab:fab_label="Check Schedule"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#4D7EA8"
+            fab:fab_colorPressed="#4D7EA8"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/gait2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@android:drawable/ic_menu_add"
+            fab:fab_label="Job Alerts"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#4D7EA8"
+            fab:fab_colorPressed="#4D7EA8"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

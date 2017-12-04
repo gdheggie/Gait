@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="560dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_gravity="center"
+            android:id="@+id/gait_pic"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/msg_button"
+            android:layout_width="190dp"
+            android:layout_height="65dp"
+            android:text="@string/msg_client"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:theme="@style/AppTheme.DarkerButton"/>
+
+        <Button
+            android:id="@+id/end_job"
+            android:layout_width="190dp"
+            android:layout_height="65dp"
+            android:text="@string/end_job"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:theme="@style/AppTheme.DarkerButton"/>
+
+    </LinearLayout>
+</LinearLayout>

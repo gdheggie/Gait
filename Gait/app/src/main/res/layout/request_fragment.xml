@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#bb1b212E">
+
+    <LinearLayout
+        android:id="@+id/request_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_gait"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:padding="8dp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <CheckBox
+                android:id="@+id/walker_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/walker"
+                android:textSize="17sp"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/sitter_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sitter"
+                android:textSize="17sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/dog_pic"
+                android:theme="@style/AppTheme.DarkerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_upload"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/add_picture_of_your_pet_s"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pic_of_dog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/confirm_request"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_gait"
+                android:theme="@style/AppTheme.DarkerButton" />
+
+            <Button
+                android:id="@+id/cancel_request"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginStart="8dp"
+                android:theme="@style/AppTheme.DarkerButton" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

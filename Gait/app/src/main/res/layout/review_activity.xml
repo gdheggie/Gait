@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/review_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/rate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_your_gait"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:padding="8dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/line"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leave_additional_comment"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/line"/>
+
+    <EditText
+        android:id="@+id/review_cmnt"
+        android:hint="@string/comment"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submit_review"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/submit_review"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:theme="@style/AppTheme.DarkerButton"/>
+
+</LinearLayout>

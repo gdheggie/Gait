@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "936993303883",
+    "firebase_url": "https://gait-1e2d2.firebaseio.com",
+    "project_id": "gait-1e2d2",
+    "storage_bucket": "gait-1e2d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936993303883:android:60f4ad692a848459",
+        "android_client_info": {
+          "package_name": "com.example.gheggie.gait"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936993303883-uhuj94ir8952e6k9u3d001h44t2kvoip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gheggie.gait",
+            "certificate_hash": "25c95081de1f2ce87cc6b77cd20cf836486a5ef5"
+          }
+        },
+        {
+          "client_id": "936993303883-14bsqm795a6bkog3a44v5o5hpt8og0d0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gheggie.gait",
+            "certificate_hash": "0147e7cad9409b90dd487ee61550ea94edc4d239"
+          }
+        },
+        {
+          "client_id": "936993303883-0vbbrigguiv1fcgdcr1m3rgkhrfgbm4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnp7QYWaSK7KepXhdw3YnJDzrgu7QWJtA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936993303883-0vbbrigguiv1fcgdcr1m3rgkhrfgbm4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
